@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Battle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="msg-area" class="msgArea">
+        <h2 class="title">SPACE BATTLE</h2>
+        <p id="messages"></p>
+    </div>
+
+    <div class="bodyContainer">
+        <div id="start-game" class="startGame">
+            <button id="play-button" class="playBtn" onclick="play()">PLAY</button>
+            <button id="retreat-button" class="retreatBtn" onclick="myShip.retreat()">Retreat
+            </button> <br>
+            <button id="resume-button" class="resumeBtn">Resume</button> <br>
+            <button class="refreshBtn" onClick="window.location.reload();">Restart</button>
+        </div>
+    
+        <div class="mainCharacterView left" >
+                <div class="nameBox">USS CRYSCRYS</div>
+                <div class="playerImage">
+                    <img src="space_hero.gif">
+                </div>
+                <div class="playerStats" id="playerScore"></div>
+        </div>
+    
+        <div class="mainCharacterView right">
+            <div class="nameBox">ALIENS</div>
+            <div class="enemyImage">
+                <img src="enemy.gif">
+            </div>
+            <div class="enemyStats" id="alien-Score"></div>
+        </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
